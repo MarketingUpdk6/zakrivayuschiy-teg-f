@@ -22,12 +22,7 @@
   background: var(--page-background) no-repeat center / cover;
 }
 
-.container {
-  inline-size: var(--container-width);
-  margin-inline: auto;
-}
-
-header {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +30,7 @@ header {
   font: var(--font-accent), sans-serif;
   background-color: #fff;
   border: 2px solid #000;
-  padding-block: clamp(122px, 90%, 130px);
+  padding-block: clamp(121px, 15vh, 130px);
   gap: 20px;
   text-transform: uppercase;
 }
@@ -58,7 +53,9 @@ header {
 
 .card {
   background-color: #fff;
-  border: 2px solid #000; 
+  border: 2px solid #000;
+  inline-size: var(--container-width);
+  margin-inline: auto;
 }
 
 .card__title {
@@ -255,27 +252,18 @@ dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
 
-
-
-@media (width <= 375px) {
-  .header {
-
-  }
-
+@media (width <= 376px) {
   .content {
-
+    margin-top: 100px;
+    gap: 49.67px;
   }
 
-  .card__title {
-
+  .floppy {
+    inline-size: 28px;
+    block-size: 28px;
   }
 
-  .card__content {
-
+  .save-button {
+    flex-direction: column;
   }
-
-  .card__image-label {
-
-  }
-
 }
