@@ -16,7 +16,7 @@
   max-inline-size: 700px;
   margin: 100px auto;
   min-inline-size: 320px;
-  min-block-size: 100dvb;
+  min-block-size: 100vh;
   font: var(--font-main);
   font-variation-settings: "wght" var(--font-weight-regular);
   background: var(--page-background) no-repeat center / cover;
@@ -31,7 +31,7 @@
   font: var(--font-accent), fantasy;
   background-color: #fff;
   border: 2px solid #000;
-  padding-block: clamp(121px, 15vh, 130px);
+  padding-block: clamp(120px, 20vmin, 130px);
   gap: 20px;
   text-transform: uppercase;
 }
@@ -123,10 +123,6 @@
   font: var(--font-accent), fantasy;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
-}
-
-.button:hover .button__text {
-  color: #fff;
 }
 
 .button:focus-visible {
